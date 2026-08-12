@@ -101,7 +101,8 @@
   .count .l{font-family:var(--sans);font-size:.54rem;letter-spacing:.18em;text-transform:uppercase;color:var(--cream);opacity:.75;margin-top:5px}
   .rule{height:1px;background:linear-gradient(90deg,transparent,rgba(231,192,115,.6),transparent)}
   .where{font-family:var(--serif);font-size:1.12rem;font-weight:400;line-height:1.35}
-  .where small{display:block;font-family:var(--sans);font-size:.72rem;letter-spacing:.06em;color:var(--cream);opacity:.72;margin-top:4px}
+  .where small{display:block;font-family:var(--sans);font-size:.72rem;letter-spacing:.06em;color:var(--cream);opacity:.72;margin-top:6px;line-height:1.5}
+  .where .venue{display:block;font-family:var(--serif);font-weight:600;font-size:1.42rem;letter-spacing:.12em;color:var(--gold-bright);text-shadow:0 1px 8px rgba(183,134,47,.35)}
   .swim{font-family:var(--sans);font-weight:300;font-size:.82rem;letter-spacing:.06em;color:var(--peach)}
 
   .acts{display:flex;flex-direction:column;gap:10px;width:min(92vw,440px)}
@@ -208,7 +209,7 @@
         <div class="u"><div class="n" id="cs">00</div><div class="l">seg</div></div>
       </div>
       <div class="rule"></div>
-      <div class="where">Rua Luiz Gonzaga, Qd 332 · Lt 3<small>Bairro da Paz · Marabá — PA</small></div>
+      <div class="where"><b class="venue">ARENA PREMIER</b><small>Rua Luiz Gonzaga, Qd 332 · Lt 3<br>Bairro da Paz · Marabá — PA</small></div>
       <div class="swim">☀︎ traga seu traje de banho ☀︎</div>
     </section>
 
@@ -257,8 +258,8 @@
   tick();setInterval(tick,1000);
 
   /* ---- links ---- */
-  var LOCAL="Rua Luiz Gonzaga, Qd 332, Lt 3 - Bairro da Paz, Marabá - PA";
-  document.getElementById("maps").href="https://www.google.com/maps/search/?api=1&query="+encodeURIComponent("Rua Luiz Gonzaga Quadra 332 Lote 3 Bairro da Paz Marabá PA");
+  var LOCAL="ARENA PREMIER - Rua Luiz Gonzaga, Qd 332, Lt 3 - Bairro da Paz, Marabá - PA";
+  document.getElementById("maps").href="https://www.google.com/maps/search/?api=1&query="+encodeURIComponent("Arena Premier Rua Luiz Gonzaga Bairro da Paz Marabá PA");
   document.getElementById("cal").href="https://calendar.google.com/calendar/render?action=TEMPLATE&text="+encodeURIComponent("Isabella XV · Pool Party")+"&dates=20260822T140000Z/20260822T200000Z&details="+encodeURIComponent("Te espero para brilhar comigo neste dia! ☀︎ Traga seu traje de banho.")+"&location="+encodeURIComponent(LOCAL);
   document.getElementById("rsvp").href="https://wa.me/5594981861443?text="+encodeURIComponent("Olá, confirmo minha presença!");
 
