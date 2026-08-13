@@ -215,7 +215,6 @@
 
     <nav class="acts reveal d4" aria-label="Ações">
       <a class="btn primary" id="rsvp" href="#" target="_blank" rel="noopener noreferrer"><span class="i">✦</span> Confirmar presença</a>
-      <a class="btn" id="maps" href="#" target="_blank" rel="noopener noreferrer"><span class="i">◈</span> Como chegar</a>
       <a class="btn" id="cal" href="#" target="_blank" rel="noopener noreferrer"><span class="i">❍</span> Salvar a data</a>
     </nav>
 
@@ -259,7 +258,6 @@
 
   /* ---- links ---- */
   var LOCAL="ARENA PREMIER - Rua Luiz Gonzaga, Qd 332, Lt 3 - Bairro da Paz, Marabá - PA";
-  document.getElementById("maps").href="https://www.google.com/maps/search/?api=1&query=-5.3822292%2C-49.1241624";
   document.getElementById("cal").href="https://calendar.google.com/calendar/render?action=TEMPLATE&text="+encodeURIComponent("Isabella XV · Pool Party")+"&dates=20260822T140000Z/20260822T200000Z&details="+encodeURIComponent("Te espero para brilhar comigo neste dia! ☀︎ Traga seu traje de banho.")+"&location="+encodeURIComponent(LOCAL);
   document.getElementById("rsvp").href="https://wa.me/5594981861443?text="+encodeURIComponent("Olá, confirmo minha presença!");
 
@@ -283,7 +281,6 @@
 
   var toast=document.getElementById("toast"),tt;
   function say(m){toast.textContent=m;toast.classList.add("show");clearTimeout(tt);tt=setTimeout(function(){toast.classList.remove("show");},3400);}
-  document.getElementById("maps").addEventListener("click",function(){say("Abrindo o mapa ◈");});
   document.getElementById("cal").addEventListener("click",function(){say("Abrindo o Google Agenda ❍");});
   document.getElementById("rsvp").addEventListener("click",function(e){burst(e.clientX||innerWidth/2,e.clientY||innerHeight*.8,true);say("Que alegria! Confirme no WhatsApp ✦");});
 
